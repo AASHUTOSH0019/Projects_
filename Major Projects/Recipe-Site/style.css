@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: brown;
+}
+
+nav {
+    max-width: 100%;
+    max-height: 60%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid grey;
+    position: sticky;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+}
+
+h2 {
+    font-weight: 600;
+    color: white;
+}
+
+.fontSec {
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+input {
+    width: 25vh;
+
+    cursor: pointer;
+    outline: none;
+    background-color: White;
+    padding: 7px;
+    border: none;
+    border-radius: 6px;
+}
+
+input::placeholder {
+
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.Search button {
+    background-color: red;
+    padding: 9px;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+    color: white;
+}
+
+.Search button:hover {
+    color: black;
+    cursor: pointer;
+    background-color: #e76c6c;
+    transition: all 0.3s;
+}
+
+
+input {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.Search button {
+    width: 45px;
+    height: auto;
+
+}
+
+header nav .search {
+    width: 80%;
+}
+
+form {
+
+    max-width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+
+.MainSec {
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+
+
+}
+
+.recipe {
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px 10px;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    transition: 0.3s ease-in-out;
+}
+
+.recipe:hover {
+    transform: scale(1.02);
+}
+
+img {
+    height: 270px;
+    border-radius: 7px;
+}
+
+h3 {
+    margin-top: 16px;
+}
+
+span {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 6px 6px;
+    padding: 5px;
+    color: #000;
+
+}
+
+p {
+    font-size: 16px;
+    color: grey;
+}
+
+.Space {
+    margin-bottom: 20px;
+
+}
+
+.recipe button {
+    margin: 20px auto;
+
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.recipe button:hover {
+    transition: all 0.3s;
+    color: black;
+    background-color: #e76c6c;
+}
+
+.RecipeDetail {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FF7E5F;
+    width: 50%;
+    height: 60%;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+    padding: 20px;
+    overflow-y: scroll;
+    border: none;
+
+}
+
+.RecipeDetail li {
+    list-style: decimal;
+    margin-right: 10px;
+}
+
+.RecipeDetail::-webkit-scrollbar {
+    width: 15px;
+}
+
+.RecipeDetail::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.RecipeDetail button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 6px;
+    border: none;
+    transition: all 0.4s;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.RecipeDetail button:hover {
+    transition: all 0.4s;
+    background-color: grey;
+}
+
+.InstructionContainer p {
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.InstructionContainer {
+    margin: 30px;
+}
+
+.MainNamePopUp {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.Ingredient {
+    text-decoration: underline;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.ListOfIngredient {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.ListOfIngredient li {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.Instruction {
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width:600px) {
+    nav {
+        text-align: center;
+        flex-direction: column;
+    }
+}

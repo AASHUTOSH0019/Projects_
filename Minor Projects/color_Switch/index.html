@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+ 
+    <style>
+       h1,    .container{
+           display: flex;
+     list-style: none;
+     align-items: center;
+     justify-content: center;
+        }
+   
+        .button{
+          
+            width: 40px;
+            height: 40px;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            
+        }
+         .grey{
+            background-color: grey;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Switch</h1>
+    <ul class="container">
+        <li style="background-color: grey;" class="button" id = "grey"></li>
+        <li  style="background-color: yellow;" class="button" id = "Yellow"></li>
+        <li style="background-color: red;" class="button" id = "Red"></li>
+        <li  style="background-color: blue;" class="button" id = "Blue"></li>
+    </ul>
+    <h2>You Can Select any color above to <br>
+    to change the body color</h2>
+</body>
+
+
+<!-- <script>
+    const buttons = document.querySelectorAll('.button');
+const body = document.querySelector("body");
+
+buttons.forEach(function(buttton){
+
+    buttton.addEventListener('click', function(e){
+      
+        console.log(e.target);
+        if (e.target.id === 'grey'){
+            body.style.backgroundColor = 'grey';
+        }
+
+    })
+})
+</script> -->
+<script src="script.js"></script>
+
+</html>

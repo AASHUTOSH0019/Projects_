@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+      
+    <div class="container">
+        <div class="header">
+            <input type="text" placeholder="Enter the City Name " class="Inputing">
+            <button  id="Search" class='bx bx-search'></button>
+            <div class="errors">
+                <h2>Sorry, Location Entered Is Not Found !!!</h2>
+                <img  class="img_errors"    src="/Images/404.png" alt="">
+            </div>
+           
+     </div>
+       <div class="Mainsec">
+
+   
+        
+        <div class="weatherSec">
+            <img  id="Images"   src="/Images/cloud.png" alt="">
+            <div class="showdeg">
+                <p  class="temprature">0<sup>°C</sup></p>
+                <p class="description">Light Rain</p>
+            </div>
+        </div>
+           <div class="footer">
+               <div class="weather_detail">
+                <i class='bx bxs-droplet' ></i>
+                <span id="Humidity" class="Humidity">45%</span>
+                <p class ="text">Humidity</p>
+            </div>
+            <div class="weather_detail2">
+                <i class='bx bx-wind'></i>
+                <span id="Wind" class="Wind">12Km/H</span>
+                <p class ="text">Wind</p>
+            </div>
+           </div>
+ 
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

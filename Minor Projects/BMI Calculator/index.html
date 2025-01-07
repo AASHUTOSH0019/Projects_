@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: 'Poppins', sans-serif;
+        color : white;
+        background-color: grey;
+      
+    }
+    .container{
+    
+        max-height : 100vh;
+        background-color : transparent,filter;
+    
+     
+       justify-content: center;
+       
+        width: 50vw;
+        margin:30vh;
+        margin-left: 50vh;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 3px, 5px, 4px rgb rgb(.1, .1, .1);
+    }
+   .BMI,  .result, .BMI2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+
+        margin: 40px, 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    label{
+        font-size: 20px;
+        margin: 10px;
+    
+    }
+    input{
+        outline-color: orange;
+        border-radius: 05px;
+        padding: 5px;
+        border: 1px solid black;
+       
+    }
+    button{
+        padding: 5px;
+        border-radius: 5px ;
+       background-color: red;
+       transition: all 0.3s;
+    }
+    button:hover{
+        outline-color:white;
+        background-color: yellow;
+        transition: all 0.3s;
+    }
+    .BMI2{
+        margin-bottom: 20px;
+    }
+
+</style>
+<body>
+    <form action="" class="container">
+        <h1>BMI CAlCULATOR</h1>
+        <div class="BMI">
+            <label for="height" class="height">Height </label>
+            <input id = "height" type="text" placeholder=" Enter the height.........">
+        
+        </div>
+        <br>
+        <div class="BMI">
+            <label for="weight" class="Weight">Weight </label>
+            <input id ="weight" type="text" placeholder=" Enter the Weight.........">
+        
+        </div>
+        <br>
+        <br>
+        <div class="BMI">
+            <button type="submit">Calculate</button>
+        </div>
+        <br>
+        <br>
+        <div class="result" id = "result"></div>
+        <br>
+        <br>
+        <div class="BMI">BMI GUIDE</div>
+        <br>
+
+        <div class="BMI2">
+           <div class="BMI"></div>
+            If Your BMI is less  then 18 = UNDERWEIGHT
+            <br>
+            <br>
+            If Your BMI is Between 18 - 24 = NORMAL
+            <br>
+            <br>
+            If Your BMI is more than 25 =  OVERWEIGHT
+           <br>
+        </div>
+    </form>
+</body>
+<script src="script.js"></script>
+
+</html>
